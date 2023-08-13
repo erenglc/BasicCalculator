@@ -24,6 +24,11 @@ namespace BasicCalculator
             OkuSonuc();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
         private void OkuSonuc()
         {
             if (File.Exists(dosyaAdi))
@@ -100,5 +105,6 @@ namespace BasicCalculator
             textBox2.Text = string.Empty;
             textBox3.Text = string.Empty;
         }
+
     }
 }
